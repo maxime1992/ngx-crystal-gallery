@@ -27,7 +27,7 @@ export class MasonryLayoutComponent {
     changesTimer: any;
 
     @Input('images') images: Images; 
-    @Input('image-template') imageTemplate: TemplateRef<any>;
+    @Input('image-template') imageTemplate: TemplateRef<any> = null;
     @Input('masonry') ENABLE_MASONRY: boolean = true; 
     @Input('max-height') MAX_HEIGHT: number = 400; 
     @Input('class-name') CLASS_NAME: string | { [key: string]: any; };

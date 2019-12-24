@@ -31,7 +31,7 @@ export class LightboxMobileComponent {
 
     @Input() data: any;
 
-    @ViewChild('wrapper') wrapperEl: ElementRef;
+    @ViewChild('wrapper', {static: false}) wrapperEl: ElementRef;
 
     get images(){
         return this.data.images;

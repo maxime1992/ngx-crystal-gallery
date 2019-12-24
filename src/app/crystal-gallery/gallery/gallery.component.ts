@@ -10,9 +10,9 @@ export class GalleryComponent {
 
     @Input('images') images: any;
     @Input('config') config: any = {};
-    @Input('image-template') imageTemplate: TemplateRef<any>;
+    @Input('image-template') imageTemplate: TemplateRef<any> = null;
 
-    @ViewChild('contentWrapper') contentWrapper: ElementRef;
+    @ViewChild('contentWrapper', {static: false}) contentWrapper: ElementRef;
 
     get isNgContent(){
         return this.contentWrapper.nativeElement.children.length > 0;
