@@ -17,6 +17,6 @@
         (click)="clickOnImage(image, i)"
         (load)="onImageLoaded(imageElem)" />
         <ng-container *ngIf="imageTemplate">
-           <ng-container *ngTemplateOutlet="imageTemplate; context: { $implicit:{image:image, index:i}}"></ng-container>
+           <ng-container *ngTemplateOutlet="imageTemplate; context: { $implicit:{image:image, imageElem:imageElem}}"></ng-container>
         </ng-container>
 </div>

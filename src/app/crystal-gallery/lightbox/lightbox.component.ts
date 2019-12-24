@@ -34,9 +34,9 @@ export class LightboxComponent {
     @HostBinding('style.transition') hostStyleTransition: string;
     @HostBinding('style.backgroundColor') hostStyleBackgroundColor: string;
 
-    @ViewChild('currImageElem', {static: false}) currImageElem: ElementRef;
-    @ViewChild('prevImageElem', {static: false}) prevImageElem: ElementRef;
-    @ViewChild('wrapper', {static: false}) wrapperElem: ElementRef;
+    @ViewChild('currImageElem', {static: true}) currImageElem: ElementRef;
+    @ViewChild('prevImageElem', {static: true}) prevImageElem: ElementRef;
+    @ViewChild('wrapper', {static: true}) wrapperElem: ElementRef;
 
     get images(){
         return this.data.images;

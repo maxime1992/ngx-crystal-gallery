@@ -37,7 +37,7 @@ export class GalleryComponent {
 
 	showLightbox(images: any, i: number){
         this.config.index = i;
-		this.lightbox.open(images, this.config);
+     	this.lightbox.open(images, this.config);
 	}
 
     handleMasonryLayoutEvents(event){
