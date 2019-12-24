@@ -1,7 +1,17 @@
-<crystal-gallery [images]="myImages" [config]="myConfig"></crystal-gallery>
+<crystal-gallery 
+[images]="myImages" 
+[config]="myConfig"
+[image-template]="imageTmpl">
+</crystal-gallery>
 
 <p>
 	<button (click)="lightbox.open(lightboxUsageImages)">Photo of road</button>
 	<button (click)="lightbox.open(lightboxUsageImages, {index: 1})">Photo of forest</button>
 	<button (click)="lightbox.open([{full: '/assets/img/yi-sung-tsai-09.jpg'}])">Photo of hill</button>
 </p>
+
+<ng-template #imageTmpl let-ctx>
+	<div class="image-template">
+	 <button (click)="lightbox.open(myImages, {index: ctx.index})"> image {{ctx.index}}</button>
+   </div>
+</ng-template>

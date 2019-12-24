@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, Input, Output, OnInit, OnChanges, EventEmitter } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, Output, OnInit, OnChanges, EventEmitter, TemplateRef } from '@angular/core';
 
 export interface Image {
     path: string; 
@@ -27,9 +27,11 @@ export class MasonryLayoutComponent {
     changesTimer: any;
 
     @Input('images') images: Images; 
+    @Input('image-template') imageTemplate: TemplateRef<any>;
     @Input('masonry') ENABLE_MASONRY: boolean = true; 
     @Input('max-height') MAX_HEIGHT: number = 400; 
     @Input('class-name') CLASS_NAME: string | { [key: string]: any; };
+    
 
     @Input('gutter')
     set gutter(value: number){

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ElementRef, ViewChild, TemplateRef } from '@angular/core';
 import { CrystalLightbox } from'./dom.service'
 
 @Component({
@@ -10,6 +10,7 @@ export class GalleryComponent {
 
     @Input('images') images: any;
     @Input('config') config: any = {};
+    @Input('image-template') imageTemplate: TemplateRef<any>;
 
     @ViewChild('contentWrapper') contentWrapper: ElementRef;
 
