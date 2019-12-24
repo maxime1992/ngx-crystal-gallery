@@ -12,7 +12,7 @@ import {
 @Component({
     selector: 'crystal-lightbox',
     templateUrl: './lightbox.component.html',
-    styleUrls: ['./css/lightbox.component.css']
+    styleUrls: ['../css/lightbox.component.css']
 })
 export class LightboxComponent {
     _index: any;

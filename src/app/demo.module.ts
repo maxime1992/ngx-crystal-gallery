@@ -2,10 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
 import { DemoComponent } from './demo.component';
+import { CrystalGalleryModule } from './crystal-gallery';
 
-import { CrystalGalleryModule } from './crystal-gallery/gallery.module';
+
 
 @NgModule({
     declarations: [

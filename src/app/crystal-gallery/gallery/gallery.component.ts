@@ -1,10 +1,10 @@
 import { Component, Input, OnInit, ElementRef, ViewChild, TemplateRef } from '@angular/core';
-import { CrystalLightbox } from'./dom.service'
+import { CrystalLightbox } from'../services/dom.service'
 
 @Component({
 	selector: 'crystal-gallery', 
 	templateUrl: './gallery.component.html',
-    styleUrls: ['./css/gallery.component.css'],
+    styleUrls: ['../css/gallery.component.css'],
 })
 export class GalleryComponent {
 

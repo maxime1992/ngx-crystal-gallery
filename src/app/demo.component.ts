@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { CrystalLightbox } from './crystal-gallery/dom.service';
+import { Component } from '@angular/core';
+import { CrystalLightbox } from './crystal-gallery';
+
 
 @Component({
 	selector: 'app-root',

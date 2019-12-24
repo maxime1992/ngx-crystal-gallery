@@ -7,9 +7,9 @@ import {
     ComponentRef
 } from '@angular/core';
 
-import { LightboxComponent } from './lightbox.component';
-import { LightboxMobileComponent } from './lightbox-mobile.component';
-import { defaultConfig } from './config';
+import { LightboxComponent } from '../lightbox/lightbox.component';
+import { LightboxMobileComponent } from '../lightbox/lightbox-mobile.component';
+import { defaultConfig } from '../config';
 
 export interface AdComponent {
   data: any;

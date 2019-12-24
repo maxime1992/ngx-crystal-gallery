@@ -3,7 +3,7 @@ import { Component, Input, EventEmitter, OnInit, HostBinding, HostListener, View
 @Component({
 	selector: 'crystal-lightbox-mobile',
 	templateUrl: './lightbox-mobile.component.html',
-    styleUrls: ['./css/lightbox-mobile.component.css']
+    styleUrls: ['../css/lightbox-mobile.component.css']
 })
 export class LightboxMobileComponent { 
 	_index: any;
