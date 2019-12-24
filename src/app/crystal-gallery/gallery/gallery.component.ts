@@ -12,7 +12,7 @@ export class GalleryComponent {
     @Input('config') config: any = {};
     @Input('image-template') imageTemplate: TemplateRef<any> = null;
 
-    @ViewChild('contentWrapper', {static: false}) contentWrapper: ElementRef;
+    @ViewChild('contentWrapper', {static: true}) contentWrapper: ElementRef;
 
     get isNgContent(){
         return this.contentWrapper.nativeElement.children.length > 0;
